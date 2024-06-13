@@ -1,0 +1,14 @@
+version: '3.8'
+
+
+services:
+  chromadb:
+    image: chromadb/chroma:latest
+    container_name: chromadb
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/data
+    environment:
+      - CHROMADB_SETTINGS__PERSIST_DIRECTORY=/data  # Set the persist directory
+      - CHROMADB_SETTINGS__CHROMA_DB_IMPL=duckdb+parquet  # Use duckdb with parquet
