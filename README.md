@@ -15,3 +15,25 @@ To run the ChromaDB, clone the repository and run the command
 docker compose up -d
 ```
 The chromadb runs on port `8000`.
+
+<details>
+    <summary><h3>Play With Python</h3></summary>
+
+## Prerequisites
+* Python 3.10
+
+### Step:
+Create a `environment` and activate the `environment` and install the `requirements.txt` packages
+
+```
+python3.10 -m venv .venv
+```
+```
+source .venv/bin/activate
+```
+```
+pip install -r requirements.txt
+```
+
+in the `main.ipynb` file contains all the code
+</details>
